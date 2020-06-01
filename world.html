@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Covid-19 All World Tracker</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	
+</head>
+<body>
+	<div class="container-fluid p-5 bg-light text-center my-3">
+		<h1>Covid-19 All World Tracker</h1>
+		<h5 class="text-muted"> A project made by <b>Sanket Sachan</b> for tracking Covid-19 cases.</h5>
+	</div>
+	
+	<div class="container-fluid">
+		<a href="index.html" class="btn btn-dark" role="button">Goto see <b>India</b>'s Cases </a>
+	</div>
+	
+	<div class="container my-5">
+		<div class="row text-center bg-light">
+			<div class="col-3 text-danger">
+				<h6>Confirmed</h6>
+				<p id="confirmed"></p>
+			</div>
+			<div class="col-3 text-info">
+				<h6>Active</h6>
+				<p id="active"></p>
+			</div>
+			<div class="col-3 text-success">
+				<h6>Recovered</h6>
+				<p id="recovered"></p>
+			</div>
+			<div class="col-3 text-warning">
+				<h6>Deceased</h6>
+				<p id="deaths"></p>
+			</div>
+			
+		</div>
+	</div>
+	
+	
+	<section class="coronaup container-fluid">
+		<div class=""my-3">
+			<h3 class="text-center text-primary">Covid-19 Live Update of All World. </h3>
+		</div>
+		<div class="table-responsive">
+			<table class="table table-bordered table-striped text center" id="myTbl">
+				<tr>
+					<th>State</th>
+					<th class="text-danger">Confirmed</th>
+					<th class="text-info">Active</th>
+					<th class="text-success">Recovered</th>
+					<th class="text-warning">Deaths</th>
+				</tr>
+			</table>
+	
+		</div>
+	</section>
+	
+	</br>
+	<div class="container-fluid">
+		<canvas id="myChart"></canvas>
+	
+	</div>
+	
+	<div class="alert text-center alert-warning" role="alert">
+  <a href="https://facebook.com/thesanketsachan/" class="alert-link">© 2020 Sanket Sachan. All rights reserved | Designed by Sanket Sachan</a>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script src="script2.js"></script>
+</html>
