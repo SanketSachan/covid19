@@ -69,5 +69,18 @@ $(document).ready(function(){
 			
 		})
 		
+		var len = state.length;
+                var txt = "";
+                if(len > 0){
+                    for(var i=0;i<len;i++){
+                            txt += "<tr><td>"+state[i]+"</td><td>"+confirmed[i]+"</td><td>"+recovered[i]+"</td><td>"+deaths[i]+"</td></tr>";
+                        
+                    }
+                    if(txt != ""){
+                        $("#myTbl").append(txt).removeClass("hidden");
+                    }
+                }
+            
+		
 	})
 })
